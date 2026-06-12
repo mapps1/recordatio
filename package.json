@@ -1,0 +1,30 @@
+{
+  "name": "recordatio",
+  "version": "1.0.0",
+  "description": "Recordatio wellness tracking app",
+  "main": "dist/src/app.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/app.js",
+    "dev": "ts-node src/app.ts",
+    "app:start": "node scripts/start-app.js",
+    "app:stop": "node scripts/stop-app.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.21",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
